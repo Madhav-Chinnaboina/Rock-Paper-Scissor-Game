@@ -65,10 +65,11 @@ document.querySelector('.js-result').innerHTML = result;
 localStorage.setItem("score",JSON.stringify(score));
 UpdateScore();
 let res=document.querySelector('.js-moves');
-res.innerHTML = `you <img src="images/${move}-emoji.png" class="move-icon">
-<img src="images/${comMove}-emoji.png" class="move-icon">
+res.innerHTML = `you <img src="${move}-emoji.png" class="move-icon">
+<img src="${comMove}-emoji.png" class="move-icon">
 Computer`;
 }
 function UpdateScore(){
 document.querySelector('.js-score').innerHTML =`wins=${score.wins} loses=${score.loses} ties=${score.ties}.`;
 }
+
